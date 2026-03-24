@@ -145,7 +145,7 @@ function DayCard({ day, meta, topics, percent, done }) {
 
             <div>
               <span
-                className="text-[10px] font-bold uppercase tracking-[0.15em] block mb-0.5"
+                className="text-xs font-bold uppercase tracking-[0.15em] block mb-0.5"
                 style={{ color: colors.text, opacity: 0.8 }}
               >
                 Day {day}
@@ -171,7 +171,7 @@ function DayCard({ day, meta, topics, percent, done }) {
               color={colors.main}
             />
             {percent > 0 && (
-              <span className="text-[10px] font-medium" style={{ color: colors.text }}>
+              <span className="text-xs font-medium" style={{ color: colors.text }}>
                 {percent}%
               </span>
             )}
@@ -180,7 +180,7 @@ function DayCard({ day, meta, topics, percent, done }) {
 
         {/* Description */}
         <p
-          className="text-[13px] mb-5 leading-relaxed"
+          className="text-sm mb-5 leading-relaxed"
           style={{ color: "var(--text-secondary)" }}
         >
           {meta.subtitle}
@@ -191,7 +191,7 @@ function DayCard({ day, meta, topics, percent, done }) {
           <div className="flex items-center gap-3">
             {/* Topic count badge */}
             <span
-              className="text-[11px] font-medium px-2.5 py-1 rounded-md"
+              className="text-xs font-medium px-2.5 py-1 rounded-md"
               style={{
                 background: "var(--bg-hover)",
                 color: "var(--text-secondary)",
@@ -202,7 +202,7 @@ function DayCard({ day, meta, topics, percent, done }) {
             </span>
             {done > 0 && (
               <span
-                className="text-[11px] font-medium px-2.5 py-1 rounded-md"
+                className="text-xs font-medium px-2.5 py-1 rounded-md"
                 style={{
                   background: colors.soft,
                   color: colors.text,
@@ -290,7 +290,7 @@ export default function Home() {
         <div className="relative z-10 max-w-3xl">
           <div className="flex items-center gap-3 mb-4">
             <span
-              className="text-[10px] font-bold uppercase tracking-[0.2em] px-3 py-1 rounded-full"
+              className="text-xs font-bold uppercase tracking-[0.2em] px-3 py-1.5 rounded-full"
               style={{
                 background: "var(--accent-glow)",
                 color: "var(--accent)",
@@ -300,7 +300,7 @@ export default function Home() {
               4-Day System
             </span>
             <span
-              className="text-[10px]"
+              className="text-xs"
               style={{ color: "var(--text-muted)" }}
             >
               · {allTopicIds.length} Topics · 5+ YOE
@@ -447,7 +447,7 @@ export default function Home() {
                 </div>
                 <div>
                   <span
-                    className="text-[10px] font-bold uppercase tracking-[0.15em] block mb-0.5"
+                    className="text-xs font-bold uppercase tracking-[0.15em] block mb-0.5"
                     style={{ color: "#a855f7", opacity: 0.8 }}
                   >
                     Bonus Module
@@ -466,7 +466,7 @@ export default function Home() {
 
               {/* Question count badge */}
               <span
-                className="text-[11px] font-bold px-3 py-1.5 rounded-lg"
+                className="text-xs font-bold px-3 py-1.5 rounded-lg"
                 style={{
                   background: "rgba(168,85,247,0.08)",
                   color: "#a855f7",
@@ -478,7 +478,7 @@ export default function Home() {
             </div>
 
             <p
-              className="text-[13px] mb-4 leading-relaxed"
+              className="text-sm mb-4 leading-relaxed"
               style={{ color: "var(--text-secondary)" }}
             >
               Most frequently asked frontend interview questions with clear,
@@ -491,7 +491,7 @@ export default function Home() {
                 {["Conceptual", "Scenario", "Output"].map((tag) => (
                   <span
                     key={tag}
-                    className="text-[10px] font-medium px-2 py-0.5 rounded"
+                    className="text-xs font-medium px-2.5 py-1 rounded"
                     style={{
                       background: "var(--bg-hover)",
                       color: "var(--text-muted)",

@@ -87,7 +87,7 @@ export function Sidebar() {
           <span style={{ color: "var(--accent)" }}>Frontend</span>{" "}
           <span style={{ color: "var(--text-primary)" }}>Prepped</span>
         </h1>
-        <p className="text-xs mt-0.5" style={{ color: "var(--text-muted)" }}>
+        <p className="text-[13px] mt-0.5" style={{ color: "var(--text-muted)" }}>
           Interview Prep · 5+ YOE
         </p>
       </Link>
@@ -120,7 +120,7 @@ export function Sidebar() {
                   <div className="text-sm font-medium truncate" style={{ color: "var(--text-primary)" }}>
                     Day {day}
                   </div>
-                  <div className="text-[10px] truncate" style={{ color: "var(--text-muted)" }}>
+                  <div className="text-xs truncate" style={{ color: "var(--text-muted)" }}>
                     {dayLabels[day]}
                   </div>
                 </div>
@@ -163,7 +163,7 @@ export function Sidebar() {
                         }}
                       >
                         <span
-                          className="w-4 h-4 rounded-full border flex items-center justify-center shrink-0 text-[8px]"
+                          className="w-5 h-5 rounded-full border flex items-center justify-center shrink-0 text-[10px]"
                           style={{
                             borderColor: completed ? "var(--success)" : "var(--border)",
                             background: completed ? "var(--success)" : "transparent",
@@ -206,7 +206,7 @@ export function Sidebar() {
             <div className="text-sm font-medium truncate" style={{ color: "var(--text-primary)" }}>
               Interview Q&A
             </div>
-            <div className="text-[10px] truncate" style={{ color: "var(--text-muted)" }}>
+            <div className="text-xs truncate" style={{ color: "var(--text-muted)" }}>
               Most Asked Questions
             </div>
           </div>
@@ -245,7 +245,7 @@ export function Sidebar() {
             <div className="flex items-center justify-between">
               <div className="flex items-center gap-2 min-w-0">
                 <div
-                  className="w-6 h-6 rounded-full flex items-center justify-center text-[10px] font-bold shrink-0"
+                  className="w-7 h-7 rounded-full flex items-center justify-center text-xs font-bold shrink-0"
                   style={{ background: "var(--accent-glow)", color: "var(--accent)" }}
                 >
                   {user.email?.[0]?.toUpperCase()}
@@ -256,7 +256,7 @@ export function Sidebar() {
               </div>
               <button
                 onClick={signOut}
-                className="text-[10px] font-medium px-2 py-1 rounded shrink-0 transition-colors"
+                className="text-xs font-medium px-2.5 py-1 rounded shrink-0 transition-colors"
                 style={{ color: "var(--text-muted)", background: "var(--bg-hover)" }}
               >
                 Log out

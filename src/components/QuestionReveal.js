@@ -22,7 +22,7 @@ export function QuestionReveal({ question, answer, followUps = [], difficulty = 
       {/* Question */}
       <div className="flex items-start gap-3">
         <span
-          className="shrink-0 mt-0.5 text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded"
+          className="shrink-0 mt-0.5 text-xs font-bold uppercase tracking-wider px-2.5 py-1 rounded"
           style={{
             color: diffColors[difficulty],
             background: `${diffColors[difficulty]}15`,
@@ -30,7 +30,7 @@ export function QuestionReveal({ question, answer, followUps = [], difficulty = 
         >
           {difficulty}
         </span>
-        <h4 className="text-sm font-medium leading-relaxed" style={{ color: "var(--text-primary)", fontFamily: "var(--font-body)" }}>
+        <h4 className="text-[15px] font-medium leading-relaxed" style={{ color: "var(--text-primary)", fontFamily: "var(--font-body)" }}>
           {question}
         </h4>
       </div>
@@ -52,7 +52,7 @@ export function QuestionReveal({ question, answer, followUps = [], difficulty = 
         ) : (
           <div style={{ animation: "fadeInUp 0.3s ease forwards" }}>
             <div
-              className="text-sm leading-relaxed whitespace-pre-line p-4 rounded-lg"
+              className="text-[15px] leading-[1.75] whitespace-pre-line p-5 rounded-lg"
               style={{ background: "var(--bg-secondary)", color: "var(--text-primary)" }}
             >
               {answer}
@@ -60,7 +60,7 @@ export function QuestionReveal({ question, answer, followUps = [], difficulty = 
 
             {followUps.length > 0 && (
               <div className="mt-4">
-                <h5 className="text-xs font-bold uppercase tracking-wider mb-2" style={{ color: "var(--accent-dim)" }}>
+                <h5 className="text-sm font-bold uppercase tracking-wider mb-2" style={{ color: "var(--accent-dim)" }}>
                   Follow-up Questions
                 </h5>
                 <ul className="space-y-1.5">
@@ -79,7 +79,7 @@ export function QuestionReveal({ question, answer, followUps = [], difficulty = 
 
             <button
               onClick={() => setRevealed(false)}
-              className="mt-3 text-xs"
+              className="mt-3 text-sm"
               style={{ color: "var(--text-muted)" }}
             >
               Hide answer

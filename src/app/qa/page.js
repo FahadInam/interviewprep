@@ -42,7 +42,7 @@ function QuestionCard({ item, index }) {
         </span>
         <div className="flex-1 min-w-0">
           <h3
-            className="text-sm font-medium leading-relaxed"
+            className="text-[15px] font-medium leading-relaxed"
             style={{ color: "var(--text-primary)" }}
           >
             {item.question}
@@ -52,7 +52,7 @@ function QuestionCard({ item, index }) {
               {item.tags.map((tag) => (
                 <span
                   key={tag}
-                  className="text-[10px] font-medium px-2 py-0.5 rounded-full"
+                  className="text-xs font-medium px-2 py-0.5 rounded-full"
                   style={{
                     background: "var(--bg-hover)",
                     color: "var(--text-muted)",
@@ -93,7 +93,7 @@ function QuestionCard({ item, index }) {
           }}
         >
           <div
-            className="mt-4 text-sm leading-relaxed whitespace-pre-line rounded-lg p-4"
+            className="mt-4 text-[15px] leading-[1.75] whitespace-pre-line rounded-lg p-5"
             style={{
               background: "var(--bg-secondary)",
               color: "var(--text-primary)",
@@ -148,11 +148,11 @@ export default function QAPage() {
           <div className="flex items-center gap-3">
             <Link
               href="/"
-              className="text-xs flex items-center gap-1 mr-3"
+              className="text-sm flex items-center gap-1 mr-3"
               style={{ color: "var(--text-muted)" }}
             >
               <svg
-                className="w-3.5 h-3.5"
+                className="w-4 h-4"
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor"
@@ -167,7 +167,7 @@ export default function QAPage() {
               Home
             </Link>
             <div
-              className="w-6 h-6 rounded-md flex items-center justify-center text-xs"
+              className="w-7 h-7 rounded-md flex items-center justify-center text-sm"
               style={{
                 background: "rgba(168, 85, 247, 0.15)",
                 color: "#a855f7",
@@ -176,14 +176,14 @@ export default function QAPage() {
               ?
             </div>
             <span
-              className="text-sm font-medium"
+              className="text-base font-medium"
               style={{ color: "var(--text-primary)" }}
             >
               Interview Q&A
             </span>
           </div>
           <span
-            className="text-xs hidden sm:inline"
+            className="text-sm hidden sm:inline"
             style={{ color: "var(--text-muted)" }}
           >
             {totalQuestions} questions
@@ -219,7 +219,7 @@ export default function QAPage() {
                 setSearch("");
                 setSelectedTag(null);
               }}
-              className="shrink-0 px-4 py-2.5 text-xs font-medium transition-colors border-b-2"
+              className="shrink-0 px-4 py-2.5 text-sm font-medium transition-colors border-b-2"
               style={{
                 color:
                   activeTab === tab.key ? "#a855f7" : "var(--text-muted)",
@@ -255,7 +255,7 @@ export default function QAPage() {
               : "Output-Based Questions"}
           </h1>
           <p
-            className="text-sm leading-relaxed"
+            className="text-[15px] leading-relaxed"
             style={{ color: "var(--text-secondary)" }}
           >
             {activeTab === "conceptual"
@@ -288,7 +288,7 @@ export default function QAPage() {
               placeholder="Search questions..."
               value={search}
               onChange={(e) => setSearch(e.target.value)}
-              className="w-full pl-10 pr-4 py-2.5 rounded-lg text-sm outline-none transition-colors"
+              className="w-full pl-10 pr-4 py-3 rounded-lg text-[15px] outline-none transition-colors"
               style={{
                 background: "var(--bg-card)",
                 border: "1px solid var(--border-subtle)",
@@ -302,7 +302,7 @@ export default function QAPage() {
         <div className="flex flex-wrap gap-1.5 mb-6">
           <button
             onClick={() => setSelectedTag(null)}
-            className="text-[11px] font-medium px-3 py-1 rounded-full transition-colors"
+            className="text-xs font-medium px-3 py-1.5 rounded-full transition-colors"
             style={{
               background: !selectedTag
                 ? "rgba(168, 85, 247, 0.15)"
@@ -319,7 +319,7 @@ export default function QAPage() {
               onClick={() =>
                 setSelectedTag(selectedTag === tag ? null : tag)
               }
-              className="text-[11px] font-medium px-3 py-1 rounded-full transition-colors"
+              className="text-xs font-medium px-3 py-1.5 rounded-full transition-colors"
               style={{
                 background:
                   selectedTag === tag
@@ -337,7 +337,7 @@ export default function QAPage() {
 
         {/* Results count */}
         <div
-          className="text-xs mb-4"
+          className="text-sm mb-4"
           style={{ color: "var(--text-muted)" }}
         >
           Showing {filtered.length} of {questions.length} questions
@@ -363,7 +363,7 @@ export default function QAPage() {
               }}
             >
               <p
-                className="text-sm"
+                className="text-base"
                 style={{ color: "var(--text-muted)" }}
               >
                 No questions match your search.

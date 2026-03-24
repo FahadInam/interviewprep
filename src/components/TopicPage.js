@@ -18,7 +18,7 @@ export function TopicPage({ topic }) {
         <div className="flex items-center gap-3 mb-2">
           <span className="text-2xl">{topic.icon}</span>
           <span
-            className="text-[10px] font-bold uppercase tracking-widest px-2.5 py-1 rounded-full"
+            className="text-xs font-bold uppercase tracking-widest px-3 py-1 rounded-full"
             style={{
               background: `${topic.tagColor || "var(--accent)"}15`,
               color: topic.tagColor || "var(--accent)",
@@ -105,7 +105,7 @@ export function TopicPage({ topic }) {
             >
               <div className="flex items-center gap-2 mb-2">
                 <span
-                  className="text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded"
+                  className="text-xs font-bold uppercase tracking-wider px-2.5 py-1 rounded"
                   style={{
                     color:
                       prob.difficulty === "easy"

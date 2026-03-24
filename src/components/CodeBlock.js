@@ -24,13 +24,13 @@ export function CodeBlock({ code, language = "javascript", title = "" }) {
             <span className="w-2.5 h-2.5 rounded-full" style={{ background: "#febc2e" }} />
             <span className="w-2.5 h-2.5 rounded-full" style={{ background: "#28c840" }} />
           </div>
-          <span className="text-[11px] ml-2" style={{ color: "var(--text-muted)", fontFamily: "var(--font-mono)" }}>
+          <span className="text-xs ml-2" style={{ color: "var(--text-muted)", fontFamily: "var(--font-mono)" }}>
             {title || language}
           </span>
         </div>
         <button
           onClick={handleCopy}
-          className="text-[11px] px-2 py-0.5 rounded transition-colors"
+          className="text-xs px-2.5 py-1 rounded transition-colors"
           style={{
             color: copied ? "var(--success)" : "var(--text-muted)",
             background: "var(--bg-hover)",
@@ -41,7 +41,7 @@ export function CodeBlock({ code, language = "javascript", title = "" }) {
       </div>
 
       {/* Code */}
-      <pre className="p-3 sm:p-4 overflow-x-auto text-[11px] sm:text-[13px] leading-6 sm:leading-7" style={{ color: "var(--text-primary)" }}>
+      <pre className="p-4 sm:p-5 overflow-x-auto text-[13px] sm:text-sm leading-6 sm:leading-7" style={{ color: "var(--text-primary)" }}>
         <code>{code}</code>
       </pre>
     </div>
