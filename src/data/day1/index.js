@@ -19,3 +19,4 @@ export { eventDelegation } from "./event-delegation";
 export { fetchCors } from "./fetch-cors";
 export { webStorage } from "./web-storage";
 export { criticalRenderPath } from "./critical-render-path";
+export { arrayUtilityMethods } from "./array-utility-methods";

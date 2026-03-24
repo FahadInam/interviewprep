@@ -212,6 +212,62 @@ export default function Home() {
           })}
         </div>
 
+        {/* Interview Q&A Card */}
+        <Link
+          href="/qa"
+          className="group block rounded-2xl p-6 mt-5 max-w-5xl transition-all duration-300 hover:scale-[1.01]"
+          style={{
+            background: "var(--bg-card)",
+            border: "1px solid var(--border-subtle)",
+            animation: "fadeInUp 0.4s ease forwards",
+            animationDelay: "0.4s",
+            opacity: 0,
+          }}
+        >
+          <div className="flex items-start justify-between mb-3">
+            <div className="flex items-center gap-3">
+              <div
+                className="w-10 h-10 rounded-xl flex items-center justify-center text-lg font-bold"
+                style={{
+                  background: "rgba(168, 85, 247, 0.15)",
+                  color: "#a855f7",
+                }}
+              >
+                ?
+              </div>
+              <div>
+                <span
+                  className="text-[10px] font-bold uppercase tracking-widest"
+                  style={{ color: "#a855f7" }}
+                >
+                  Bonus
+                </span>
+                <h2
+                  className="text-xl leading-snug"
+                  style={{
+                    fontFamily: "var(--font-display), Georgia, serif",
+                    color: "var(--text-primary)",
+                  }}
+                >
+                  Interview Q&A
+                </h2>
+              </div>
+            </div>
+          </div>
+          <p className="text-sm mb-4 leading-relaxed" style={{ color: "var(--text-secondary)" }}>
+            102 most frequently asked frontend interview questions with clear, easy-to-understand answers. Conceptual, scenario-based, and output-based.
+          </p>
+          <span
+            className="text-xs font-medium flex items-center gap-1 transition-colors group-hover:gap-2"
+            style={{ color: "#a855f7" }}
+          >
+            Start Practicing
+            <svg className="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+              <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
+            </svg>
+          </span>
+        </Link>
+
         {/* Quick Start / How to Use */}
         <div
           className="max-w-5xl mt-10 rounded-2xl p-8"

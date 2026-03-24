@@ -183,6 +183,36 @@ export function Sidebar() {
         })}
       </nav>
 
+      {/* Interview Q&A Link */}
+      <div className="px-4 py-2 border-t" style={{ borderColor: "var(--border-subtle)" }}>
+        <Link
+          href="/qa"
+          className="flex items-center gap-3 px-4 py-2.5 rounded-lg transition-colors hover:bg-[var(--bg-hover)]"
+          style={{
+            color: pathname === "/qa" ? "#a855f7" : "var(--text-secondary)",
+            background: pathname === "/qa" ? "rgba(168, 85, 247, 0.08)" : "transparent",
+          }}
+        >
+          <div
+            className="w-7 h-7 rounded-lg flex items-center justify-center text-xs font-bold shrink-0"
+            style={{
+              background: "rgba(168, 85, 247, 0.15)",
+              color: "#a855f7",
+            }}
+          >
+            ?
+          </div>
+          <div className="flex-1 min-w-0">
+            <div className="text-sm font-medium truncate" style={{ color: "var(--text-primary)" }}>
+              Interview Q&A
+            </div>
+            <div className="text-[10px] truncate" style={{ color: "var(--text-muted)" }}>
+              Most Asked Questions
+            </div>
+          </div>
+        </Link>
+      </div>
+
       {/* Footer */}
       <div className="border-t" style={{ borderColor: "var(--border-subtle)" }}>
         {/* Progress */}

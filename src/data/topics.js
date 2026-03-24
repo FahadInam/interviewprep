@@ -20,6 +20,7 @@ import {
   fetchCors,
   webStorage,
   criticalRenderPath,
+  arrayUtilityMethods,
 } from "./day1";
 
 import { day2Topics } from "./day2";
@@ -49,6 +50,7 @@ const day1Map = {
   "fetch-cors": fetchCors,
   "web-storage": webStorage,
   "critical-render-path": criticalRenderPath,
+  "array-utility-methods": arrayUtilityMethods,
 };
 
 export const allTopics = {

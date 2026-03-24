@@ -22,6 +22,7 @@ export const dayStructure = {
     { id: "fetch-cors", title: "Fetch API & CORS" },
     { id: "web-storage", title: "Cookies vs localStorage vs sessionStorage" },
     { id: "critical-render-path", title: "Critical Rendering Path" },
+    { id: "array-utility-methods", title: "Array & Utility Methods (Must-Know)" },
   ],
   2: [
     { id: "virtual-dom", title: "Virtual DOM & Reconciliation" },
