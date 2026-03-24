@@ -19,7 +19,7 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata = {
-  title: "Frontend Mastery — Interview Prep for Senior Engineers",
+  title: "Frontend Prepped — Interview Prep for Senior Engineers",
   description:
     "A no-gap learning system for 5+ years frontend interview preparation. JavaScript, React, Next.js, System Design.",
 };

@@ -85,7 +85,7 @@ export function Sidebar() {
       <Link href="/" className="block px-6 py-5 border-b" style={{ borderColor: "var(--border-subtle)" }}>
         <h1 className="text-xl tracking-tight" style={{ fontFamily: "var(--font-display), Georgia, serif" }}>
           <span style={{ color: "var(--accent)" }}>Frontend</span>{" "}
-          <span style={{ color: "var(--text-primary)" }}>Mastery</span>
+          <span style={{ color: "var(--text-primary)" }}>Prepped</span>
         </h1>
         <p className="text-xs mt-0.5" style={{ color: "var(--text-muted)" }}>
           Interview Prep · 5+ YOE
@@ -286,7 +286,7 @@ export function Sidebar() {
         <Link href="/" className="flex items-center gap-2">
           <span className="text-lg font-medium" style={{ fontFamily: "var(--font-display), Georgia, serif" }}>
             <span style={{ color: "var(--accent)" }}>Frontend</span>{" "}
-            <span style={{ color: "var(--text-primary)" }}>Mastery</span>
+            <span style={{ color: "var(--text-primary)" }}>Prepped</span>
           </span>
         </Link>
         <button
